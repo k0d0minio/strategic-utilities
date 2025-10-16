@@ -1,0 +1,31 @@
+---
+description: "Core behavioral constraints that enforce 'think before edit' patterns"
+alwaysApply: true
+priority: 0
+---
+
+# Core Behavioral Rules
+
+## Analysis Before Action
+- You MUST understand the existing codebase before suggesting changes
+- You MUST start with reading related files and codebase before suggesting changes  
+- You MUST suggest only minimal changes related to current user dialog
+- Always explain your reasoning before calling tools or making changes
+
+## Change Control
+- Make minimal, focused changes
+- Apply all modifications to a single file at once
+- DO NOT RENAME METHODS UNLESS ABSOLUTELY NECESSARY
+- Do not alter unrelated files
+- Focus on the task given—avoid feature creep
+
+## Error Handling
+- Always raise errors explicitly, never silently ignore them
+- Use specific error types that clearly indicate what went wrong
+- NO FALLBACKS: Never mask errors with fallback values
+- Log errors with context before raising them
+
+## Quality Gates
+- Highlight any file growing beyond control (1600 lines max)
+- Ask for confirmation on approach before implementing complex changes
+- Stay focused on the task given—avoid feature creep

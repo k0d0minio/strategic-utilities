@@ -1,0 +1,35 @@
+---
+description: "Testing requirements and patterns"
+globs: ["**/*.test.*", "**/*.spec.*", "**/tests/**/*", "**/__tests__/**/*"]
+priority: 200
+---
+
+# Testing Requirements
+
+## Test-Driven Development
+- Write tests BEFORE implementation
+- Follow AAA pattern (Arrange, Act, Assert)
+- Use descriptive test names
+- Test both happy paths and edge cases
+- Mock external dependencies properly
+
+## Test Coverage
+- Achieve minimum 80% code coverage
+- Test all public APIs
+- Include integration tests for critical paths
+- Test error conditions and edge cases
+- Verify cleanup and teardown
+
+## Test Organization
+- Group related tests with describe blocks
+- Use beforeEach/afterEach for setup/cleanup
+- Keep tests focused and independent
+- Use proper assertions (not just truthy checks)
+- Document complex test scenarios
+
+## Testing Tools
+- Use Jest for unit testing
+- Use React Testing Library for component tests
+- Use Supertest for API testing
+- Mock external services and APIs
+- Use proper test data factories

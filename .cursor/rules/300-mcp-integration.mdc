@@ -1,0 +1,44 @@
+---
+description: "MCP server integration patterns and security guidelines"
+globs: [".cursor/config/mcp.json", ".cursor/config/environment.json"]
+priority: 300
+---
+
+# MCP Server Integration Rules
+
+## Security Best Practices
+- Never commit API keys to version control
+- Use environment variables for all sensitive data
+- Rotate API keys regularly
+- Use minimal required permissions for each service
+- Review tool calls before execution
+
+## GitHub Integration
+- Use read-only mode when possible
+- Limit repository access to necessary projects
+- Use personal access tokens with minimal scopes
+- Enable branch protection rules
+
+## Linear Integration
+- Use for project management and issue tracking
+- Sync development progress with Linear tickets
+- Create issues directly from code discussions
+- Link commits to Linear issues
+
+## Vercel Integration
+- Deploy previews for pull requests
+- Monitor deployment status
+- Access logs and analytics
+- Manage environment variables
+
+## Supabase Integration
+- Query database schemas and data
+- Execute migrations safely
+- Monitor database performance
+- Access real-time subscriptions
+
+## Tool Usage Guidelines
+- Maximum 40 tools sent to Agent
+- Select only necessary tools for current workflow
+- Use read-only mode for exploration
+- Confirm destructive operations before execution

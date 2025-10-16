@@ -1,0 +1,35 @@
+---
+description: "Next.js specific patterns and conventions"
+globs: ["**/pages/**/*", "**/app/**/*", "**/components/**/*", "**/lib/**/*", "next.config.*"]
+priority: 250
+---
+
+# Next.js Development Patterns
+
+## App Router (Next.js 13+)
+- Use app directory structure
+- Implement proper loading.tsx and error.tsx
+- Use Server Components by default
+- Add "use client" only when necessary
+- Leverage parallel and intercepting routes
+
+## Performance Optimization
+- Use next/image for optimized images
+- Implement proper SEO with metadata
+- Use dynamic imports for code splitting
+- Optimize bundle size with next/bundle-analyzer
+- Implement proper caching strategies
+
+## API Routes
+- Use proper HTTP methods
+- Implement request validation
+- Use middleware for common functionality
+- Handle errors gracefully
+- Return proper response types
+
+## Styling
+- Use CSS Modules or Tailwind CSS
+- Implement responsive design
+- Use proper font optimization
+- Optimize CSS delivery
+- Follow design system patterns

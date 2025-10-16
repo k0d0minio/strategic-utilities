@@ -1,0 +1,35 @@
+---
+description: "Node.js and Express development patterns"
+globs: ["**/server/**/*", "**/api/**/*", "**/backend/**/*", "**/*.server.*"]
+priority: 150
+---
+
+# Node.js & Express Development Rules
+
+## Error Handling
+- Use guard clauses at function beginnings
+- Implement early returns for error conditions
+- Create custom error types with clear messages
+- Log errors with context before raising them
+- Never mask errors with fallback values
+
+## API Design
+- Use RESTful conventions
+- Implement proper HTTP status codes
+- Validate input parameters
+- Use parameterized queries to prevent SQL injection
+- Implement rate limiting and CORS properly
+
+## Performance
+- Use connection pooling for databases
+- Implement proper caching strategies
+- Avoid blocking operations in main thread
+- Use streaming for large data operations
+- Monitor memory usage and prevent leaks
+
+## Security
+- Validate all inputs
+- Use environment variables for secrets
+- Implement proper authentication/authorization
+- Use HTTPS in production
+- Sanitize user inputs

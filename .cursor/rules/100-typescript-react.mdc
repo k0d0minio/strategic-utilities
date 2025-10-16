@@ -1,0 +1,34 @@
+---
+description: "TypeScript and React development patterns and constraints"
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+priority: 100
+---
+
+# TypeScript & React Development Rules
+
+## Type Safety
+- Always use TypeScript over JavaScript
+- Avoid `any` types - use proper type definitions
+- Define explicit return types for functions
+- Use discriminated unions for complex scenarios
+- Enable strict mode in tsconfig.json
+
+## React Patterns
+- Use functional components with hooks
+- Implement proper cleanup in useEffect
+- Avoid unnecessary re-renders with useMemo/useCallback
+- Use proper key props for list items
+- Follow React naming conventions (PascalCase for components)
+
+## Component Structure
+- Keep components under 200 lines
+- Extract custom hooks for complex logic
+- Use proper prop types and interfaces
+- Implement error boundaries for error handling
+- Follow single responsibility principle
+
+## State Management
+- Use local state for component-specific data
+- Lift state up when sharing between components
+- Consider context for deeply nested prop drilling
+- Use proper state update patterns (functional updates)
