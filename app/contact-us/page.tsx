@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { CalendlyButton } from "@/components/calendly-button";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -79,12 +80,29 @@ export default function ContactPage() {
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Get in touch with our utilities experts for professional
-                  consultation and project support.
+                  consultation and project support. Choose how you'd like to connect:
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-12">
                 <div className="space-y-8">
+                  <Card className="bg-primary text-primary-foreground">
+                    <CardHeader>
+                      <CardTitle>Prefer to talk first?</CardTitle>
+                      <CardDescription className="text-primary-foreground/80">
+                        Book a free 30-minute consultation to discuss your utilities project needs
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <CalendlyButton 
+                        text="Book a Free Consultation" 
+                        variant="secondary" 
+                        size="lg" 
+                        className="w-full"
+                      />
+                    </CardContent>
+                  </Card>
+
                   <Card>
                     <CardHeader>
                       <CardTitle>Reach Us</CardTitle>

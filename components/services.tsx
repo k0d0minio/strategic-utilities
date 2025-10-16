@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { CalendlyButton } from "@/components/calendly-button";
 
 interface ServiceItem {
   title: string;
@@ -171,9 +172,12 @@ export function Services() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" asChild>
-            <a href="/services">View All Services</a>
-          </Button>
+          <div className="mb-4">
+            <p className="text-lg text-muted-foreground mb-4">
+              Let's discuss your project needs
+            </p>
+            <CalendlyButton size="lg" text="Book a Discovery Call" />
+          </div>
         </div>
       </div>
     </section>

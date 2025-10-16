@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { CalendlyButton } from "@/components/calendly-button";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export function Header() {
                 Contact Us
               </Link>
               <Button variant="default" className="ml-4" asChild>
-                <Link href="/contact-us">Contact Us</Link>
+                <CalendlyButton text="Book a Meeting" />
               </Button>
             </div>
           </nav>
@@ -85,9 +86,7 @@ export function Header() {
                 Contact Us
               </Link>
               <div className="px-3 py-2">
-                <Button variant="default" className="w-full" asChild>
-                  <Link href="/contact-us">Contact Us</Link>
-                </Button>
+                <CalendlyButton text="Book a Meeting" className="w-full" />
               </div>
             </div>
           </div>

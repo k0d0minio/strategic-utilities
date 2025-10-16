@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { CalendlyButton } from "@/components/calendly-button";
 
 export function Hero() {
   return (
@@ -32,29 +33,24 @@ export function Hero() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button
+              <CalendlyButton
                 variant="outline"
                 size="lg"
                 className="text-lg px-8 py-6 bg-transparent"
-                asChild
-              >
-                <a href="/contact-us">{"Contact Us"}</a>
-              </Button>
+                text="Book a Free Consultation"
+              />
             </div>
 
             <div className="bg-primary/5 rounded-xl p-4 border border-primary/20">
               <p className="text-sm text-muted-foreground mb-2">
                 Need utilities project support?
               </p>
-              <Link href="/contact-us">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="text-primary border-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                >
-                  Get Professional Consultation
-                </Button>
-              </Link>
+              <CalendlyButton
+                text="Get Professional Consultation"
+                variant="outline"
+                size="sm"
+                className="text-primary border-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+              />
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">

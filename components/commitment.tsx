@@ -1,3 +1,6 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { CalendlyButton } from "@/components/calendly-button";
+
 export function Commitment() {
   return (
     <section className="py-16 lg:py-24 bg-muted/30">
@@ -31,6 +34,9 @@ export function Commitment() {
                 each project has different priorities, which is why we develop
                 tailored solutions.
               </p>
+            </div>
+            <div className="pt-4">
+              <CalendlyButton text="Schedule a Consultation" />
             </div>
           </div>
 

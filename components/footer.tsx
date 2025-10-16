@@ -1,5 +1,7 @@
 "use client";
 
+import { CalendlyButton } from "@/components/calendly-button";
+
 export function Footer() {
   return (
     <footer className="bg-muted/30 py-12">
@@ -74,6 +76,14 @@ export function Footer() {
                 <span>{"Location: NSW 2151"}</span>
               </li>
             </ul>
+            <div className="pt-4">
+              <CalendlyButton 
+                text="Schedule a Consultation" 
+                variant="outline" 
+                size="sm" 
+                className="w-full"
+              />
+            </div>
           </div>
 
           <div className="space-y-4">
